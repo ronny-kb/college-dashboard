@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Colleges in the US by Region</title>
+    <link rel="stylesheet" href="./styles.css">
+</html>
+<body>
+    <h1 style = "text-align: center;">Colleges in the US by Region</h1>
+    <h3 style = "text-align: center;" id="region"></h3>
+    <div class="axis-selectors">
+        <div class="axis-selector-group">
+            <div>
+                <label>X Axis:</label>
+                <select id="selectX1">
+                    <option value="Admission Rate">Admission Rate</option>
+                    <option value="ACT Median">ACT Median</option>
+                    <option value="SAT Average">SAT Average</option>
+                    <option value="Undergrad Population">Undergrad Population</option>
+                    <option value="% White">% White</option>
+                    <option value="% Black">% Black</option>
+                    <option value="% Hispanic">% Hispanic</option>
+                    <option value="% Asian">% Asian</option>
+                    <option value="% American Indian">% American Indian</option>
+                    <option value="% Pacific Islander">% Pacific Islander</option>
+                    <option value="% Biracial">% Biracial</option>
+                    <option value="Average Cost">Average Cost</option>
+                    <option value="Expenditure Per Student">Expenditure Per Student</option>
+                    <option value="Completion Rate 150% time">Completion Rate 150% time</option>
+                    <option value="Retention Rate (First Time Students)">Retention Rate</option>
+                    <option value="Median Debt on Graduation">Median Debt on Graduation</option>
+                    <option value="Median Earnings 8 years After Entry">Median Earnings 8 years After Entry</option>
+                </select>
+            </div>
+            <div>
+                <label>Y Axis:</label>
+                <select id="selectY1">
+                    <option value="Admission Rate">Admission Rate</option>
+                    <option value="ACT Median">ACT Median</option>
+                    <option value="SAT Average">SAT Average</option>
+                    <option value="Undergrad Population">Undergrad Population</option>
+                    <option value="% White">% White</option>
+                    <option value="% Black">% Black</option>
+                    <option value="% Hispanic">% Hispanic</option>
+                    <option value="% Asian">% Asian</option>
+                    <option value="% American Indian">% American Indian</option>
+                    <option value="% Pacific Islander">% Pacific Islander</option>
+                    <option value="% Biracial">% Biracial</option>
+                    <option value="Average Cost">Average Cost</option>
+                    <option value="Expenditure Per Student">Expenditure Per Student</option>
+                    <option value="Completion Rate 150% time">Completion Rate 150% time</option>
+                    <option value="Retention Rate (First Time Students)">Retention Rate</option>
+                    <option value="Median Debt on Graduation">Median Debt on Graduation</option>
+                    <option value="Median Earnings 8 years After Entry">Median Earnings 8 years After Entry</option>
+                </select>
+            </div>
+        </div>
+        <div class="axis-selector-group">
+            <div>
+                <label>X Axis:</label>
+                <select id="selectX2">
+                    <option value="Admission Rate">Admission Rate</option>
+                    <option value="ACT Median">ACT Median</option>
+                    <option value="SAT Average">SAT Average</option>
+                    <option value="Undergrad Population">Undergrad Population</option>
+                    <option value="% White">% White</option>
+                    <option value="% Black">% Black</option>
+                    <option value="% Hispanic">% Hispanic</option>
+                    <option value="% Asian">% Asian</option>
+                    <option value="% American Indian">% American Indian</option>
+                    <option value="% Pacific Islander">% Pacific Islander</option>
+                    <option value="% Biracial">% Biracial</option>
+                    <option value="Average Cost">Average Cost</option>
+                    <option value="Expenditure Per Student">Expenditure Per Student</option>
+                    <option value="Completion Rate 150% time">Completion Rate 150% time</option>
+                    <option value="Retention Rate (First Time Students)">Retention Rate</option>
+                    <option value="Median Debt on Graduation">Median Debt on Graduation</option>
+                    <option value="Median Earnings 8 years After Entry">Median Earnings 8 years After Entry</option>
+                </select>
+            </div>
+            <div>
+                <label>Y Axis:</label>
+                <select id="selectY2">
+                    <option value="Admission Rate">Admission Rate</option>
+                    <option value="ACT Median">ACT Median</option>
+                    <option value="SAT Average">SAT Average</option>
+                    <option value="Undergrad Population">Undergrad Population</option>
+                    <option value="% White">% White</option>
+                    <option value="% Black">% Black</option>
+                    <option value="% Hispanic">% Hispanic</option>
+                    <option value="% Asian">% Asian</option>
+                    <option value="% American Indian">% American Indian</option>
+                    <option value="% Pacific Islander">% Pacific Islander</option>
+                    <option value="% Biracial">% Biracial</option>
+                    <option value="Average Cost">Average Cost</option>
+                    <option value="Expenditure Per Student">Expenditure Per Student</option>
+                    <option value="Completion Rate 150% time">Completion Rate 150% time</option>
+                    <option value="Retention Rate (First Time Students)">Retention Rate</option>
+                    <option value="Median Debt on Graduation">Median Debt on Graduation</option>
+                    <option value="Median Earnings 8 years After Entry">Median Earnings 8 years After Entry</option>
+                </select>
+            </div>
+        </div>
+        <div class="axis-selector-group">
+            <a class="button" href="/">Back to Regions</a>
+            <svg width="70" height="40">
+                <circle cx="10" cy="10" r="5" fill="crimson"></circle>
+                <circle cx="10" cy="30" r="5" fill="green"></circle>
+                <text x="17" y="12">Private</text>
+                <text x="17" y="35">Public</text>
+            </svg>
+        </div>
+    </div>
+    <div id="scatterplot"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="./d3-tip.js"></script>
+    <script src="./scatterplot.js"></script>
+</body>

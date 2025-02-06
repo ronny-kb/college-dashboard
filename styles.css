@@ -1,0 +1,41 @@
+.d3-tip {
+  line-height: 1;
+  padding: 2px;
+  background: rgba(240, 240, 240, 0.95);
+  color: #333;
+  border-radius: 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 1px; 
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  outline: none;
+  transition: 500ms;
+  width: 100px;
+}
+
+.button:hover {
+  background-color: lightGray;
+}
+
+.selected {
+  fill-opacity: 1 !important;
+}
+
+.axis-selector-group {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.axis-selectors {
+  display: flex;
+}
+
+p {
+  text-align: center;
+}
